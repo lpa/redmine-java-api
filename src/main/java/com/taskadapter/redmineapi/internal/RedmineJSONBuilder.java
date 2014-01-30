@@ -291,7 +291,7 @@ public class RedmineJSONBuilder {
 		JsonOutput.addIfNotNull(writer, "done_ratio", issue.getDoneRatio());
 		if (issue.getProject() != null)
 			JsonOutput.addIfNotNull(writer, "project_id", issue.getProject()
-					.getIdentifier());
+					.getId());
 		if (issue.getAuthor() != null)
 			JsonOutput.addIfNotNull(writer, "author_id", issue.getAuthor()
 					.getId());
